@@ -1,13 +1,10 @@
-name: WIP Pull Request Check
-
+name: WIP Checker
 on:
   pull_request:
     types: [opened]
-    if: contains(github.event.pull_request.title, 'WIP')
-
 jobs:
-  validate:
+  check_wip:
     runs-on: ubuntu-latest
+    if: contains(github.event.pull_request.title, "WIP")
     steps:
-      - name: Report Success
-        run: echo "The job ran only because the PR was opened and titled 'WIP'."
+      - run: echo "This PR contains WIP in the title!"
