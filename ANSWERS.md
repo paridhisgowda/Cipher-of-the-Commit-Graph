@@ -2,7 +2,7 @@
 
 ## Key 1: The Shadow's Identity (Git Object Type)
 The final answer for this fragment is:
-FLAG_GIT IS
+GIT
 
 ## Key 2: The Invisible Link (Plumbing Command)
 The final answer for this fragment is:
